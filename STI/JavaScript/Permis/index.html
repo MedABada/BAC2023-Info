@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Permis</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='controle.js' async></script>
+</head>
+<body>
+    <div> 
+        <h1>Enregistrement d'un testeur</h1>
+    </div>
+    <div>
+        <label for="Nperm">N° Permis:</label>
+        <input type="text" id="Nperm">
+        <br>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom">
+        <br>
+        <label for="pnom">Prenom:</label>
+        <input type="text" id="pnom">
+        <br>
+        <label for="genre">Genre:</label>
+        <input type="radio" name="genre" value="F"> F
+        <input type="radio" name="genre" value="M"> M
+    </div>
+    <div>
+        <button type="button" onclick="annuler()">Annuler</button>
+        <button type="button" onclick="verif1()">Ajouter</button>
+    </div>
+</body>
+</html>
