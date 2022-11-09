@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulaire</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='script.js' async></script>
+</head>
+<body>
+    <fieldset>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom">
+        <br>
+        <label for="dn">Date de Naissance:</label>
+        <input type="date" id="dn">
+        <br>
+        <fieldset>
+            <legend>Sport</legend>
+            <input type="checkbox" name="sport"> Foot
+            <br>
+            <input type="checkbox" name="sport"> Tennis
+            <br>
+            <input type="checkbox" name="sport"> Natation
+        </fieldset>
+        <button type="button" onclick="verif()">Valider</button>
+    </fieldset>
+</body>
+</html>
