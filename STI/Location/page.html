@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Location</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='script.js'></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div>
+                <H1>Location de Voiture</H1>
+                <label for="nbjr">Nombre de jours:</label>
+                <input type="number" id="nbjr">
+            </div>
+            <div>
+                <label for="nom">Nom:</label> 
+                <input type="text" id="nom">
+                <label for="pnom">Prenom:</label>
+                <input type="text" id="pnom">
+            </div>
+            <div>
+                <label for="cin">CIN:</label>
+                <input type="text" id="cin">
+            </div>
+            <div>
+                <fieldset style="width: 11%;">
+                    <legend>Genre</legend>
+                    <input type="radio" name="genre" id="M"> Homme
+                    <input type="radio" name="genre" id="F"> Femme
+                </fieldset>
+            </div>
+            <div>
+                <fieldset style="width: 15%;">
+                    <legend>Option</legend>
+                    
+                    <label for="clim">Climatise</label>
+                    <input type="checkbox" id="clim"> 
+
+                    <label for="toutopt">Tout Option</label>
+                    <input type="checkbox" id="toutopt"> 
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <label for="type">Type de Voiture:</label>
+                <input list="types" id="typeVoiture">
+                <datalist id="types">
+                    <option value="Ford Mustang Mach 1"></option>
+                    <option value="Cheverolet Camaro SS"></option>
+                    <option value="Jeep Wrangler"></option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="dateLoc">Date location:</label>
+                <input type="date" id="dateLoc">
+                <br>
+                <label for="dateRet">Date retour:</label>
+                <textarea id="dateRet" cols="20" rows="1"></textarea>
+            </div>
+            <div>
+                <button type="button" onclick="verif()">Valider</button>
+                <button type="reset">Annuler</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
